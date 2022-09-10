@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="primerApp.Page1">
+    <StackLayout Orientation="Vertical" BackgroundColor="#FEE6B9">
+        
+        <Label Text="Conversor" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,40,0,0"></Label>
+        
+        <Frame VerticalOptions="FillAndExpand" Margin="40,20,40,100" CornerRadius="30" HasShadow="False">
+            
+            <StackLayout Orientation="Vertical" VerticalOptions="Center" Spacing="0">
+                
+                <Image Source="https://static.vecteezy.com/system/resources/previews/003/027/930/non_2x/inches-tape-and-meter-vector.jpg"></Image>
+                
+                <Label Text="(CM) to (M)" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold"></Label>
+
+                <Button Text="Start" CornerRadius="25" BackgroundColor="#7B68EE" TextColor="White" Margin="0,20,0,0" FontSize="Medium"></Button>
+                
+                
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
