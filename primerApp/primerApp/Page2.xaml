@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="primerApp.Page2"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+
+    <Grid BackgroundColor="#FDE07f" RowDefinitions="*" ColumnDefinitions="*">
+
+        <StackLayout VerticalOptions="Center" Spacing="50" Padding="50">
+            <Image Source="https://cdn-icons-png.flaticon.com/512/2514/2514542.png"></Image>
+
+            <Frame BackgroundColor="White" CornerRadius="30">
+                <Entry BackgroundColor="White" Keyboard="Numeric" Placeholder="Centimeter (Cm)" TextColor="Black" HorizontalTextAlignment="Center"  FontSize="Large" PlaceholderColor="Black"  x:Name="txtCentimetros"></Entry>
+                
+            </Frame>
+
+            <Button CornerRadius="30" Text="Calculate" FontAttributes="Bold" FontSize="Medium" TextColor="White" BackgroundColor="Green" Margin="40,0,40,0" TextTransform="None" x:Name="btnConvert" Clicked="btnConvert_Clicked"></Button>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Result:" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="110,0,0,0" ></Label>
+                <Label FontSize="Medium" Text="~" FontAttributes="Bold" HorizontalOptions="Start" HorizontalTextAlignment="Start" x:Name="resCentimetros"></Label>
+                
+            </StackLayout>
+
+            <Button HorizontalOptions="End" CornerRadius="30" Text="Back" FontAttributes="Bold" FontSize="Medium"  TextTransform="None" BackgroundColor="Black" TextColor="White" x:Name="btnBack" Clicked="btnBack_Clicked"></Button>
+        </StackLayout>
+        
+        
+
+    </Grid>
+    
+</ContentPage>

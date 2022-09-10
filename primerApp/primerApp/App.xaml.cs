@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using primerApp;
 
+
 namespace primerApp
 {
     public partial class App : Application
@@ -11,7 +12,7 @@ namespace primerApp
         {
             InitializeComponent();
 
-            MainPage = new Page1();
+            MainPage = new NavigationPage(new primerApp.Page1()); //La pagina 1 es la que inicia. 
         }
 
         protected override void OnStart ()
